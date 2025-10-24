@@ -1,0 +1,9 @@
+[project]
+name = "Decentralized-tourism-experiences"
+telemetry = false
+cache_dir = "./.cache"
+[contracts.experience-booking-verifier]
+path = "contracts/experience-booking-verifier.clar"
+[repl.analysis]
+passes = ["check_checker"]
+check_checker = { trusted_sender = false, trusted_caller = false, callee_filter = false }
